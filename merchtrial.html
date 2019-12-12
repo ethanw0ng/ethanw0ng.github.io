@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Braun</title>
+
+    <style>
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'IBM Plex Mono', monospace;
+        overflow-x: hidden;
+    }
+
+   
+    html {
+        width: 100%;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'IBM Plex Mono', monospace;
+        overflow-x: hidden;
+    }
+   
+    .nav {
+        position: fixed;
+        top: 0;
+        display: grid;
+        z-index: 1;
+        grid-template-columns: 100px 100px 95px 145px 80px 1fr 55px 55px 55px;
+        grid-template-rows: 50px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .nava1{
+        position: relative;
+        grid-column: 1/2;
+        background-color: black;
+    }
+
+    .brauna1 {
+        position: absolute;
+        height: 50%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava2{
+        position: relative;
+        background-color: black;
+        grid-column: 2/3;
+    }
+
+    .watcha1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+    .nava3{
+        position: relative;
+        background-color: black;
+        grid-column: 3/4;
+    }
+
+    .clocksa1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+    .nava4{
+        position: relative;
+        background-color: black;
+        grid-column: 4/5;
+    }
+
+    .accessoriesa1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    
+    .nava5{
+        position: relative;
+        background-color: black;
+        grid-column: 5/6;
+    }
+
+    .salea1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+    }
+    
+    .nava6{
+        position: relative;
+        background-color: black;
+        grid-column: 6/7;
+    }
+
+    .spacea1 {
+        position: absolute;
+        font-size: 1.5vh;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava7{
+        position: relative;
+        grid-column: 7/8;
+        background-color: black;
+    }
+
+    .searcha1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .nava8{
+        position: relative;
+        grid-column: 8/9;
+        background-color: black;
+    }
+
+    .accounta1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava9{
+        position: relative;
+        grid-column: 9/10;
+        background-color: black;
+    }
+
+    .baga1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    .container {
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 1fr 3fr;
+        
+    }
+
+    .sidebar {
+        background-color: pink;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        font-size: 40px;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .a1 {
+        border: 4px solid black;
+        height: 300px;
+    }
+
+    
+
+    
+    </style>
+</head>
+<body>
+        <div class="nav">
+                <div class="nava1">
+                    <img class="brauna1" src="images/braun_a1.png">
+                </div>
+        
+                <div class="nava2">
+                    <div class="watcha1"> WATCHES </div>
+                </div>
+        
+                <div class="nava3">
+                    <div class="clocksa1"> CLOCKS </div>
+                </div>
+        
+                <div class="nava4">
+                    <div class="accessoriesa1"> ACCESSORIES </div>
+                </div>
+        
+                <div class="nava5">
+                    <div class="salea1"> SALE </div>
+                </div>
+        
+                <div class="nava6">
+                    <div class="spacea1"> &nbsp; </div>
+                </div>
+        
+                <div class="nava7">
+                    <img class="searcha1" src="images/nav_a2.png">
+                </div>
+        
+                <div class="nava8">
+                    <img class="accounta1" src="images/nav_a3.png">
+                </div>
+        
+                <div class="nava9">
+                    <img class="baga1" src="images/nav_a4.png">
+                </div>
+        
+            </div>
+
+    <div class="container"> 
+        <div class="sidebar"> sidebar </div>
+
+        <div class="products">
+            <div class="a1"> product 1</div>
+            <div class="a1"> product 2</div>
+            <div class="a1"> product 3</div>
+            <div class="a1"> product 4</div>
+            <div class="a1"> product 5</div>
+            <div class="a1"> product 6</div>
+            <div class="a1"> product 7</div>
+            <div class="a1"> product 8</div>
+            <div class="a1"> product 9</div>
+            <div class="a1"> product 10</div>
+            <div class="a1"> product 11</div>
+            <div class="a1"> product 12</div>
+
+        </div>
+        
+
+       
+    </div>
+
+    
+</body>
+</html>

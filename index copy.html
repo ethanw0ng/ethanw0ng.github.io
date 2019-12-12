@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Braun</title>
+
+    <style>
+
+    .element::-webkit-scrollbar { width: 0 !important }
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'IBM Plex Mono', monospace;
+        overflow-x: hidden;
+    }
+   
+    a:visited {
+    color: black;    
+    }    
+
+    a:hover {
+        color: black;
+    }
+
+    a:link{
+        color: black;    
+    }  
+
+    a {
+    text-decoration:none;
+    }
+   
+    .nav {
+        position: fixed;
+        top: 0;
+        display: grid;
+        z-index: 3;
+        grid-template-columns: 25% 0% 0% 0% 0% 0% 25% 25% 25%;
+        grid-template-rows: 50px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .nava1{
+        position: relative;
+        grid-column: 1/2;
+        background-color: black;
+    }
+
+    .brauna1 {
+        position: absolute;
+        height: 50%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava2{
+        position: relative;
+        background-color: black;
+        grid-column: 2/3;
+    }
+
+    .watcha1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+        display: none;
+    }
+
+    .nava3{
+        position: relative;
+        background-color: black;
+        grid-column: 3/4;
+    }
+
+    .clocksa1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+        display: none;
+    }
+
+    .nava4{
+        position: relative;
+        background-color: black;
+        grid-column: 4/5;
+    }
+
+    .accessoriesa1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+        display: none;
+    }
+    
+    .nava5{
+        position: relative;
+        background-color: black;
+        grid-column: 5/6;
+    }
+
+    .salea1 {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: left;
+        display: none;
+    }
+    
+    .nava6{
+        position: relative;
+        background-color: black;
+        grid-column: 6/7;
+    }
+
+    .spacea1 {
+        position: absolute;
+        font-size: 1.5vh;
+        color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava7{
+        position: relative;
+        grid-column: 7/8;
+        background-color: black;
+    }
+
+    .searcha1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .nava8{
+        position: relative;
+        grid-column: 8/9;
+        background-color: black;
+    }
+
+    .accounta1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .nava9{
+        position: relative;
+        grid-column: 9/10;
+        background-color: black;
+    }
+
+    .baga1 {
+        position: absolute;
+        height: 45%;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 8;
+        grid-template-areas:
+            "a a"
+            "b c"
+            "d e"
+            "f g"
+            "h i"
+            "j k"
+            "l l";
+        margin-top: 50px;
+    }
+
+    .a {
+        position: relative;
+        grid-area: a;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+
+    }
+
+    .b {
+        position: relative;
+        grid-area: b;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .c {
+        position: relative;
+        grid-area: c;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .d {
+        position: relative;
+        grid-area: d;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .e {
+        position: relative;
+        grid-area: e;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .f {
+        position: relative;
+        grid-area: f;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .g {
+        position: relative;
+        grid-area: g;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }
+
+    .h {
+        position: relative;
+        grid-area: h;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }   
+
+    .i {
+        position: relative;
+        grid-area: i;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    } 
+
+    .j {
+        position: relative;
+        grid-area: j;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }    
+
+    .k {
+        position: relative;
+        grid-area: k;
+        border: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    } 
+
+    .l {
+        grid-area: l;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        background-color: white;
+        width: 1fr;
+        height: 60vw;
+    }    
+
+    .image1 {
+        height: 100%;
+    }
+
+    .categorya1 {
+        position: relative;
+        font-size: 5vw;
+    }
+
+    .shopnowa1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 1vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    } 
+
+    .categoryb1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowb1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .categoryc1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowc1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .categoryd1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowd1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .categorye1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowe1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .categoryf1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowf1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .categoryg1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowg1 {
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .producth1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .priceh1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    .categoryh1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowh1 {
+        background-color: white;
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .producti1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .pricei1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    .categoryi1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowi1 {
+        background-color: white;
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .productj1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .pricej1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    .categoryj1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowj1 {
+        background-color: white;
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .productk1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .pricek1 {
+        position: absolute;
+        font-size: 2vw;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+    .categoryk1 {
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .shopnowk1 {
+        background-color: white;
+        position: relative;
+        font-size: 2vw;
+        border: 1px solid black;
+        padding: 0.3vw 0.9vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+
+    .imagea1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hovera1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hovera1:hover .imagea1 {
+        opacity: 0.3;
+    }
+        
+    .hovera1:hover .hovera1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imageb1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverb1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverb1:hover .imageb1 {
+        opacity: 0.3;
+    }
+        
+    .hoverb1:hover .hoverb1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagec1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverc1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverc1:hover .imagec1 {
+        opacity: 0.3;
+    }
+        
+    .hoverc1:hover .hoverc1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imaged1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverd1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverd1:hover .imaged1 {
+        opacity: 0.3;
+    }
+        
+    .hoverd1:hover .hoverd1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagee1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hovere1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hovere1:hover .imagee1 {
+        opacity: 0.2;
+    }
+        
+    .hovere1:hover .hovere1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagef1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverf1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverf1:hover .imagef1 {
+        opacity: 0.3;
+    }
+        
+    .hoverf1:hover .hoverf1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imageg1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverg1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverg1:hover .imageg1 {
+        opacity: 0.2;
+    }
+        
+    .hoverg1:hover .hoverg1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imageh1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .captionh1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverh1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverh1:hover .imageh1 {
+        opacity: 0.2;
+    }
+
+    .hoverh1:hover .captionh1 {
+        opacity: 0;
+    }
+        
+    .hoverh1:hover .hoverh1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagei1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .captioni1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoveri1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoveri1:hover .imagei1 {
+        opacity: 0.2;
+    }
+
+    .hoveri1:hover .captioni1 {
+        opacity: 0;
+    }
+        
+    .hoveri1:hover .hoveri1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagej1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .captionj1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverj1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverj1:hover .imagej1 {
+        opacity: 0.2;
+    }
+
+    .hoverj1:hover .captionj1 {
+        opacity: 0;
+    }
+        
+    .hoverj1:hover .hoverj1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .imagek1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .captionk1 {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+        
+    .hoverk1-middle{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        
+    .hoverk1:hover .imagek1 {
+        opacity: 0.2;
+    }
+
+    .hoverk1:hover .captionk1 {
+        opacity: 0;
+    }
+        
+    .hoverk1:hover .hoverk1-middle{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .flexboxl1 {
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+    }
+
+    .iteml1 {
+        width: 1fr;
+    }
+
+    .flexboxl1 {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2%;
+
+    }
+
+    .iteml1 {
+        width: 50%;
+    }
+
+    .footertitlel1 {
+        margin-left: 10%;
+        margin-top: 15%;
+        font-size: 3vw;
+    }
+
+    .footerelementl1 {
+        margin-left: 11%;
+        font-size: 2vw;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+            <a class="nava1" href="index.html">
+                    <img class="brauna1" src="images/braun_a1.png">
+                </a>
+
+        <div class="nava2">
+            <div class="watcha1"> WATCHES </div>
+        </div>
+
+        <div class="nava3">
+                <a href="merch.html">
+            <div class="clocksa1"> CLOCKS </div>
+        </div>
+
+        <div class="nava4">
+            <div class="accessoriesa1"> ACCESSORIES </div>
+        </div>
+
+        <div class="nava5">
+            <div class="salea1"> SALE </div>
+        </div>
+
+        <div class="nava6">
+            <div class="spacea1"> &nbsp; </div>
+        </div>
+
+        <div class="nava7">
+            <img class="searcha1" src="images/nav_a2.png">
+        </div>
+
+        <div class="nava8">
+            <img class="accounta1" src="images/nav_a3.png">
+        </div>
+
+        <div class="nava9">
+            <img class="baga1" src="images/nav_a4.png">
+        </div>
+
+    </div>
+
+    <div class="container"> 
+        <div class="a hovera1"> 
+            <div class="hovera1-middle">
+                <h1 class="categorya1"> NEW ARRIVALS </h1>
+                <button class="shopnowa1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imagea1" src="images/home_a1.jpg" alt="">
+        </div>
+
+
+        <div class="b hoverb1">
+            <div class="hoverb1-middle">
+                <h1 class="categoryb1"> FEATURED </h1>
+                <button class="shopnowb1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imageb1" src="images/home_b1.jpg" alt="">
+        </div>
+
+
+        <div class="c hoverc1"> 
+            <div class="hoverc1-middle">
+                <h1 class="categoryc1"> BEST SELLERS </h1>
+                <button class="shopnowc1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imagec1" src="images/home_c1.jpg" alt="">   
+        </div>
+
+
+        <div class="d hoverd1">
+            <div class="hoverd1-middle">
+                <h1 class="categoryd1"> WATCHES </h1>
+                <button class="shopnowd1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imaged1" src="images/home_d1.jpg" alt="">   
+        </div>
+
+
+        <div class="e hovere1">
+            <div class="hovere1-middle">
+                <h1 class="categorye1"> CLOCKS </h1>
+                <button class="shopnowe1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imagee1" src="images/home_e1.jpg" alt="">  
+        </div>
+
+
+        <div class="f hoverf1">
+            <div class="hoverf1-middle">
+                <h1 class="categoryf1"> ACCESSORIES </h1>
+                <button class="shopnowf1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imagef1" src="images/home_f1.jpg" alt="">  
+        </div>
+
+
+        <div class="g hoverg1">
+            <div class="hoverg1-middle">
+                <h1 class="categoryg1"> SALE </h1>
+                <button class="shopnowg1"> SHOP NOW </button>
+            </div>
+            <img class="image1 imageg1" src="images/home_g1.jpg" alt="">  
+        </div>
+
+
+        <div class="h hoverh1">
+            <div class="hoverh1-middle">
+                <h1 class="categoryh1"> BNC017 <br> CLASSIC WALL CLOCK </h1>
+                <button class="shopnowh1"> BUY NOW </button>
+            </div>
+            <img class="image1 imageh1" src="images/home_h1.jpg" alt=""> 
+            <div class="captionh1">
+                <h1 class="producth1"> BNC017 CLASSIC WALL CLOCK </h1>
+                <h2 class="priceh1"> $80.00 </h2> 
+            </div>
+        </div>
+
+
+        <div class="i hoveri1">
+            <div class="hoveri1-middle">
+                <h1 class="categoryi1"> BN0021 <br> CLASSIC WATCH W/ MESH STRAP </h1>
+                <button class="shopnowi1"> BUY NOW </button>
+            </div>
+            <img class="image1 imagei1" src="images/home_i1.jpg" alt=""> 
+            <div class="captioni1">
+                <h1 class="producti1"> BN0021 CLASSIC WATCH W/ MESH STRAP </h1>
+                <h2 class="pricei1"> $170.00 </h2> 
+            </div>
+        </div>
+
+
+        <div class="j hoverj1">
+            <div class="hoverj1-middle">
+                <h1 class="categoryj1"> BC02 <br> CLASSIC TRAVEL ANALOGUE ALARM CLOCK </h1>
+                <button class="shopnowj1"> BUY NOW </button>
+            </div>
+            <img class="image1 imagej1" src="images/home_j1.jpg" alt=""> 
+            <div class="captionj1">
+                <h1 class="productj1"> BC02 CLASSIC TRAVEL ANALOGUE ALARM CLOCK </h1>
+                <h2 class="pricej1"> $25.00 </h2> 
+            </div>
+        </div>
+
+
+        <div class="k hoverk1">
+            <div class="hoverk1-middle">
+                <h1 class="categoryk1"> BN0171 <br> CLASSIC WATCH W/CERAMIC BRACELET </h1>
+                <button class="shopnowk1"> BUY NOW </button>
+            </div>
+            <img class="image1 imagek1" src="images/home_k1.jpg" alt=""> 
+            <div class="captionk1">
+                <h1 class="productk1"> BN0171 CLASSIC WATCH W/CERAMIC BRACELET </h1>
+                <h2 class="pricek1"> $25.00 </h2> 
+            </div> 
+        </div>
+
+
+        <div class="l">
+            <div class=flexboxl1>
+                <div class="iteml1"> 
+                    <h1 class="footertitlel1"> CUSTOMER SERVICE </h1>
+                    <p class="footerelementl1"> TRACK MY ORDER </p>
+                    <p class="footerelementl1"> CONTACT US </p>
+                    <p class="footerelementl1"> FAQ </p>
+                    <p class="footerelementl1"> REGISTER YOUR WARRANTY </p>
+                </div>
+                <div class="iteml1"> 
+                    <h1 class="footertitlel1"> SHOPPING </h1>
+                    <p class="footerelementl1"> RETURNS & REFUNDS </p>
+                    <p class="footerelementl1"> DELIVERY INFORMATION</p>
+                    <p class="footerelementl1"> SECURITY & PRIVACY </p>
+                    <p class="footerelementl1"> TERMS & CONDITIONS </p>
+                </div>
+                <div class="iteml1">
+                    <h1 class="footertitlel1"> INFORMATION </h1>
+                    <p class="footerelementl1"> ABOUT US </p>
+                    <p class="footerelementl1"> LATEST CATALOGUES </p>
+                    <p class="footerelementl1"> NEWSLETTER SIGN-UP </p>
+                    <p class="footerelementl1"> AWARDS </p>
+                    <p class="footerelementl1"> NEWS & PRESS ARTICLES </p>
+                    <p class="footerelementl1"> PRODUCT MANUALS </p>
+                </div>
+                <div class="iteml1">
+                    <h1 class="footertitlel1"> OTHERS </h1>
+                    <p class="footerelementl1"> DISTRIBUTOR LOGIN </p>
+                    <p class="footerelementl1"> WHERE TO BUY </p>
+                    <p class="footerelementl1"> SITE MAP </p>
+                </div>
+
+
+
+            </div>
+
+
+        </div>  
+    </div>
+
+    
+</body>
+</html>
